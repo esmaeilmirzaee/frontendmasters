@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Handlee&family=Knewave&family=New+Rocker&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Dawning of a New Day', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Knewave', cursive;
+font-family: 'New Rocker', cursive;
+}
+h1 {
+  font-family: 'Knewave', 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+p {
+  font-family: 'handlee', 'Times New Roman', Times, serif;
+}
+.row {
+  display: flex;
+  align-items: stretch;
+}
+.main-brand {
+  font-family: 'New Rocker', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.news-text {
+  font-family: 'Handlee', sans-serif;
+}
+
+.headline {
+  width: 50%;
+  flex: 2;
+  border: solid 1px #333;
+  padding: 5px;
+}
+
+.left-sidebar {
+  width: 25%;
+  flex: 1;
+  border: solid 1px #333;
+  padding: 5px;
+}
+
+.right-sidebar {
+  width: 25%;
+  flex: 1;
+  border: solid 1px #333;
+  padding: 5px;
+}
+
+.headline-image {
+  width: 100%;
+  align-items: stretch;
+}
