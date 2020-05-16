@@ -12,7 +12,7 @@ console.log(daysOfWeek[0]);
 console.log(daysOfWeek);
 
 console.log(daysOfWeek.length); // length is a property
-console.log(daysOfWeek.join(' | '); // join is a method or function
+console.log(daysOfWeek.join(' | ')); // join is a method or function
 
 
 daysOfWeek.push('Mercredi');
@@ -34,4 +34,4 @@ for (let i = 0; i < courses.length; i++) {
 
 daysOfWeek.forEach(function(day) {
     console.log(day.toUpperCase());
-}
+});

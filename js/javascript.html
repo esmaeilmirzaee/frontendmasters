@@ -2,11 +2,41 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        
+        <meta name="viewport" content="width=device-width" />        
         <title>Javascript</title>
     </head>
+
     <body>
-       
+        <button class="event-button">Click me!</button> 
+        <input placeholder="type into me!" class="input-to-copy" />
+        <p class="p-to-copy-to">Nothing has happened yet.</p>
+
+        <div class="button-event">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+        </div>
+
+        <script>
+
+            document.querySelector('.button-event').addEventListener('click', function(event) {
+                alert(`You clicked on button ${event.target.innerText}`);
+            });
+
+            const button = document.querySelector('.event-button');
+            button.addEventListener('hover', function () {
+                alert('Hey there');
+            });
+
+            const input = document.querySelector('.input-to-copy');
+            const paragraph = document.querySelector('.p-to-copy-to');
+
+            input.addEventListener("keyup", function() {
+                paragraph.innerText = input.value;
+            });
+        </script>
+        <script src="./arrays.js"></script>
     </body>
 </html>
