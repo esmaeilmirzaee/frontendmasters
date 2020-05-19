@@ -22,7 +22,10 @@
         <script>
 
             document.querySelector('.button-event').addEventListener('click', function(event) {
-                alert(`You clicked on button ${event.target.innerText}`);
+                if (event.target.tagName === 'button') { // after adding this line my code doesn't work, actually it worked and showed only one error. However, during the workshop it ran twice by showing two alerts.
+                    alert(`You clicked on button ${event.target.innerText}`);
+                }
+                event.stopPropagation(); // preventing the propogation of the event
             });
 
             const button = document.querySelector('.event-button');
